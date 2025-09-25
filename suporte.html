@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Suporte</title>
+        <link rel="stylesheet" href="./css/suporte.css">
+        <link rel="icon" href="./img/favicon.ico">
+    </head>
+    <body>
+    <main>
+        <div class="container">
+        <section id="faq">
+            <h2>FAQ (Perguntas Frequentes)</h2>
+            <ol>
+                <li>
+                <h3>Como faço para criar uma conta no Shine?</h3>
+                <p>Para criar uma conta no Shine, basta clicar no botão "Registrar" no canto superior direito da página inicial e seguir as instruções para preencher o formulário de registro.</p>
+                </li>
+                <li>
+                <h3>Como faço para redefinir minha senha?</h3>
+                <p>Se você esqueceu sua senha, vá para a página de login e clique em "Esqueceu a senha?". Você receberá um e-mail com instruções para redefinir sua senha.</p>
+                </li>
+                <li>
+                <h3>Como entrar em contato com o suporte?</h3>
+                <p>Você pode entrar em contato conosco por e-mail em <a class="email" href="mailto:suporte@shine.com">suporte@shine.com</a> ou preenchendo o formulário de contato abaixo.</p>
+                </li>
+            </ol>
+        </section>
+        <section id="contact">
+            <h2>Formulário de Contato</h2>
+            <div class="container">
+            <form action="enviar_email.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            </div><br>
+            <div class="container">
+            <label for="email">Endereço de E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            </div><br>
+            <div class="container">
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" required>
+            </div><br>
+            <div class="container">
+            <label for="message">Mensagem:</label>
+            <textarea class="msg" id="message" name="message" rows="8" required></textarea>
+            </div><br>
+            <button class="btn btn-custom" type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <a href="./about.html">Quem somos</a>
+        <a href="./home.html">Home</a>
+        <a href="./politicadeprivacidade.html">Politica de Privacidade</a>
+        <p>© 2024 Shine. Todos os direitos reservados.</p>
+    </footer>
+    </body>
+</html>

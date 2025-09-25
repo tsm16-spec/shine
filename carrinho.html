@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/ctylescar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo"><img src="./img/Shine (500 x 500 px).png" width="100px"></div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-custom" type="submit">Pesquisar</button>
+            </form>
+        </div>
+
+    </header>
+    <main class="container">
+        <h1>Carrinho de Compras</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Imagem</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Preço Unitário</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <tr>
+                    <td><img src="./img/CroppedJeans.jpeg" alt="Cropped Corset Jeans" title="Cropped Corset Jeans" style="width: 100px;"></td>
+                    <td><a class="link" href="./paginacropped.html">Cropped Corset Jeans</a></td>
+                    <td class="price" data-price="59.99">R$59,99</td>
+                    <td><input type="number" class="quantity" value="1" min="1"></td>
+                    <td class="subtotal">R$59,99</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/saltobege.jpg" title="Sandália Salto Bloco Tiras Couro Bege" alt="Sandália Salto Bloco Tiras Couro Bege" style="width: 100px;"></td>
+                    <td><a class="link" href="./paginasandalia.html">Sandália Salto Bloco Tiras Couro Bege</a></td>
+                    <td class="price" data-price="260.00">R$260,00</td>
+                    <td><input type="number" class="quantity" value="1" min="1"></td>
+                    <td class="subtotal">R$260,00</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/palhetasombra5.jpg" title="Flower Knows Paleta de sombras de oito cores chocolate wonder" alt="Flower Knows Paleta de sombras de oito cores chocolate wonder" style="width: 100px;"></td>
+                    <td><a class="link" href="./paginapaleta.html">Flower Knows Paleta de sombras de oito cores chocolate wonder</a></td>
+                    <td class="price" data-price="52.47">R$R$52,47</td>
+                    <td><input type="number" class="quantity" value="1" min="1"></td>
+                    <td class="subtotal">R$2R$52,47</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/hoodie.png" title="Moletom com Capuz Leve Smiley Face Derretido" alt="Moletom com Capuz Leve Smiley Face Derretido" style="width: 100px;"></td>
+                    <td><a class="link" href="./paginamoletom.html">Moletom com Capuz Leve Smiley Face Derretido</a></td>
+                    <td class="price" data-price="170.00">R$170,00</td>
+                    <td><input type="number" class="quantity" value="1" min="1"></td>
+                    <td class="subtotal">R$170,00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-md-8">
+                <a href="./home.html" class="btn btn-secondary">Continuar Comprando</a>
+            </div>
+            <div class="col-md-4">
+                <div class="cart-summary">
+                    <h3>Resumo da Compra</h3>
+                    <p>Subtotal: R$<span id="cart-subtotal">74,99</span></p>
+                    <p>Frete: R$15,00</p>
+                    <p>Total: R$<span id="cart-total">89,99</span></p>
+                    <a href="./chekout.html" class="btn btn-success">Finalizar Compra</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="./home.html">Home</a>
+            <a href="./support.html">Suporte</a>
+            <a href="./about.html">Quem Somos</a>
+            <a href="./politicadeprivacidade.html">Política de Privacidade</a>
+            <a href="./account.html">Minha Conta</a>
+        <p>© 2024 Shine. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function updateCart() {
+            let subtotal = 0;
+            document.querySelectorAll('#cart-items .price').forEach((priceElement, index) => {
+                const price = parseFloat(priceElement.getAttribute('data-price'));
+                const quantity = parseInt(document.querySelectorAll('#cart-items .quantity')[index].value);
+                const rowSubtotal = price * quantity;
+                document.querySelectorAll('#cart-items .subtotal')[index].textContent = `R$${rowSubtotal.toFixed(2).replace('.', ',')}`;
+                subtotal += rowSubtotal;
+            });
+            const freight = 15.00;
+            const total = subtotal + freight;
+            document.getElementById('cart-subtotal').textContent = subtotal.toFixed(2).replace('.', ',');
+            document.getElementById('cart-total').textContent = total.toFixed(2).replace('.', ',');
+        }
+
+        document.addEventListener('input', (event) => {
+            if (event.target.classList.contains('quantity')) {
+                updateCart();
+            }
+        });
+
+        // Inicializa a página com os valores corretos
+        updateCart();
+    </script>
+</body>
+</html>
