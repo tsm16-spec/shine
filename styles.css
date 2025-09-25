@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce8fdce;
+}
+
+.header, .nav, .categories, .offers, .footer {
+    padding: 20px;
+    text-align: center;
+}
+.banner{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #d8a8f8;
+    border-bottom: 1px solid #ccc;
+}
+.search-bar input {
+    padding: 5px;
+    width: 200px;
+}
+.search-bar button {
+    padding: 6px 10px;
+}
+.btn-custom {
+    background-color: #874caf; 
+    color: white; 
+    border: none; 
+}
+.btn-custom:hover {
+    background-color: #7445a0;
+    color: white;
+}
+/* Estilos para transições */
+.btn-custom {
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Estilos personalizados para o botão do dropdown */
+.btn-custom:focus {
+    background-color: #7445a0; 
+    color: white;
+}
+/* Transição suave */
+.btn-custom {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+nav ul {
+    margin: 10px;
+    background-color: #d8a8f8;
+    display: flex;
+    list-style-type: none;
+    margin-top: 50px;
+}
+.login{
+    color: #33034e;
+}
+.login:hover{
+    background-color: #7422aa;
+    color: #33034e;
+}
+nav a {
+    color: #33034e;
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: rgb(101, 49, 170);
+}
+
+.banner-content img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.carousel-inner img{
+    width: 1200px;
+    height: auto;
+}
+#divofer{
+    background-color: #d8a8f8;
+    text-align: center;
+    font-size: 600%;
+}
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.offer { 
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.offer img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h5, .linkproduto {
+    color: #33034e;
+}
+
+p, .preco {
+    color: #ccc;
+}
+
+footer {
+    background-color: #d8a8f8;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: #7422aa;
+    padding: 30px;
+}
+
+footer p {
+    color: #000000;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-add-cart {
+    background-color: #874caf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px; cursor: pointer;
+}
+
+.btn-add-cart:hover {
+    background-color: #7445a0; 
+}
+
+.btn-add-cart:focus {
+    outline: none;
+    box-shadow: 0 0 5px #874caf;
+}
+.btn-container {
+    display: flex;
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+.btn-favorite img {
+    width: 24px; 
+    height: 24px;
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 480px){
+nav{height: 80px; font-size:80%}
+nav li{width: 100%;};
+}
+    
+/*Tablet*/
+@media only screen and (min-width: 481px){
+nav{height: 100px; font-size:80%}
+nav li{width: 100%;}
+}
+    
+/*Desktop*/
+@media only screen and (min-width: 769px){
+   nav{height: 100px; padding-left: 0.5%;font-size: 90%;}
+nav li{width: 20%; text-align: center;}
+}

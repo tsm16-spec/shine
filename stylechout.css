@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5d9fd;
+}
+
+.header, .nav, .banner, .categories, .offers, .footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #d8a8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 200px;
+}
+.search-bar button {
+    padding: 6px 10px;
+}
+.btn-custom {
+    background-color: #874caf; 
+    color: white; 
+    border: none; 
+}
+.btn-custom:hover {
+    background-color: #7445a0;
+    color: white;
+}
+/* Estilos para transições */
+.btn-custom {
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Estilos personalizados para o botão do dropdown */
+.btn-custom:focus {
+    background-color: #7445a0; 
+    color: white;
+}
+/* Transição suave */
+.btn-custom {
+    transition: background-color 0.3s, color 0.3s;
+}
+#imgpag{
+    width: 60px;
+    height: 50px;
+}
+#imgpagpix{
+    width: 30px;
+    height: 30px;
+}
+footer {
+    background-color: #d8a8f8;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: #7422aa;
+    padding: 30px;
+}
+
+footer p {
+    color: #000000;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.payment-options .custom-control {
+    display: flex;
+    align-items: center;
+}
+
+.payment-options img {
+    width: 100px;
+    height: auto;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+footer {
+    background-color: #d8a8f8;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: #7422aa;
+    padding: 30px;
+}
+
+footer p {
+    color: #000000;
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 480px){
+    nav{height: 80px; font-size:80%}
+    nav li{width: 100%;};
+    }
+        
+    /*Tablet*/
+    @media only screen and (min-width: 481px){
+    nav{height: 100px; font-size:80%}
+    nav li{width: 100%;}
+    }
+        
+    /*Desktop*/
+    @media only screen and (min-width: 769px){
+       nav{height: 100px; padding-left: 0.5%;font-size: 90%;}
+    nav li{width: 20%; text-align: center;}
+    }

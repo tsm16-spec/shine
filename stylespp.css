@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce8fdce;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #d8a8f8;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+.email{
+    text-decoration: none;
+    color: #301641;
+}
+.email:hover{
+    text-decoration: none;
+    color: #845ba0;
+}
+footer a {
+    color: #7422aa;
+    padding: 30px;
+}
+
+footer p {
+    color: #000000;
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 480px){
+    nav{height: 80px; font-size:80%}
+    nav li{width: 100%;};
+    }
+        
+    /*Tablet*/
+    @media only screen and (min-width: 481px){
+    nav{height: 100px; font-size:80%}
+    nav li{width: 100%;}
+    }
+        
+    /*Desktop*/
+    @media only screen and (min-width: 769px){
+       nav{height: 100px; padding-left: 0.5%;font-size: 90%;}
+    nav li{width: 20%; text-align: center;}
+    }
