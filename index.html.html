@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINE</title>
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <div class="top-bar">
+        <div class="logo"><img src="./img/Shine (500 x 500 px).png" width="100px"></div>
+        <br>
+        
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-custom" type="submit">Pesquisar</button>
+        </form>
+        <a class="login" href="./login.html">Login/Cadastro</a>
+    </div>
+    <nav >
+        <ul>
+            <div class="dropdown">
+                <a class="btn btn-custom dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categorias
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#Feminino">Feminino</a>
+                    <a class="dropdown-item" href="#Plussize">Plus size</a>
+                    <a class="dropdown-item" href="#Calçados">Calçados</a>
+                    <a class="dropdown-item" href="#Acessórios">Acessórios</a>
+                    <a class="dropdown-item" href="#Beleza">Beleza</a>
+                </div>
+            </div>
+            <div class="linkcategoria">
+                <a href="#Feminino">Feminino</a>
+                <a href="#Plussize">Plus size</a>
+                <a href="#Calçados">Calçados</a>
+                <a href="#Acessórios">Acessórios</a>
+                <a href="#Beleza">Beleza</a>
+                <a href="carrinho.html" class="btn btn-custom">Carrinho</a>
+            </div>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/1.jpeg" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/2.jpg" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/3.jpeg" alt="Terceiro Slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="divofer">Ofertas</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="alert-area"></div>
+        <section class="container">
+        <div id="Feminino"></div>
+        <div class="offer">
+            <img src="./img/CroppedJeans.jpeg" alt="Cropped Corset Jeans" title="Cropped Corset Jeans">
+            <h5><a class="linkproduto" href="./paginacropped.html">Cropped Corset Jeans</a></h5>
+            <p class="preco">R$59,99</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/pijamarosa.jpeg" alt="Conjunto Pijama Rosa" title="Conjunto Pijama Rosa">
+            <h5><a class="linkproduto" href="#">Conjunto Pijama Rosa</a></h5>
+            <p class="preco">R$58,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/saiajeans.jpeg" alt="Saia Jeans Plissada" title="Saia Jeans Plissada">
+            <h5><a class="linkproduto" href="#">Saia Jeans Plissada</a></h5>
+            <p class="preco">R$80,99</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/vestidopreto (2).jpeg" alt="Vestido Tubo Feminino de Couro" title="Vestido Tubo Feminino de Couro">
+            <h5><a class="linkproduto" href="#">Vestido Tubo Feminino de Couro</a></h5>
+            <p class="preco">R$47,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/conjuntoazul.jpg" alt="Conjunto Azul Bloco De Cores" title="Conjunto Azul Bloco De Cores">
+            <h5><a class="linkproduto" href="#">Conjunto Azul Bloco De Cores</a></h5>
+            <p class="preco">R$81,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/calçajeans.jpeg" alt="Calça Denim Utility Vintage" title="Calça Denim Utility Vintage">
+            <h5><a class="linkproduto" href="#">Calça Denim Utility Vintage</a></h5>
+            <p class="preco">R$159,99</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/calçajeans1.jpeg" alt="Calça Jeans De Perna Larga Distorcida" title="Calça Jeans De Perna Larga Distorcida">
+            <h5><a class="linkproduto" href="#">Calça Jeans De Perna Larga Distorcida</a></h5>
+            <p class="preco">R$138,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/croppedjeans1.jpeg" alt="Parte superior do tubo Bainha do lenço Jeans" title="Parte superior do tubo Bainha do lenço Jeans">
+            <h5><a class="linkproduto" href="#">Parte superior do tubo Bainha do lenço Jeans</a></h5>
+            <p class="preco">R$65,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/calçajeans3.png" alt=" Calça Jeans Feminina Coolmax Com Impressão De Letras" title=" Calça Jeans Feminina Coolmax Com Impressão De Letras">
+            <h5><a class="linkproduto" href="#"> Calça Jeans Feminina Coolmax Com Impressão De Letras</a></h5>
+            <p class="preco">R$179,90</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/calçajeans2.png" alt="Calça jeans com zíper e detalhe rasgado com zíper" title="Calça jeans com zíper e detalhe rasgado com zíper">
+            <h5><a class="linkproduto" href="#">Calça jeans com zíper e detalhe rasgado com zíper</a></h5>
+            <p class="preco">R$155,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/calçajeans4.png" alt=" Calça Jeans Cargo Reta De Cintura Alta Feminina" title=" Calça Jeans Cargo Reta De Cintura Alta Feminina">
+            <h5><a class="linkproduto" href="#"> Calça Jeans Cargo Reta De Cintura Alta Feminina</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/croppedbranco (1).jpeg" alt="Cropped Branco Simples Manga Longa" title="Cropped Branco Simples Manga Longa">
+            <h5><a class="linkproduto" href="#">Cropped Branco Simples Manga Longa</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/croppedbranco (2).jpeg" alt="Cropped Branco Simples Reagta" title="Cropped Branco Simples Reagta">
+            <h5><a class="linkproduto" href="#">Cropped Branco Simples Reagta</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/conjuntopreto.jpg" alt="Conjunto Cropped Preto Shorts com Linhas" title="Conjunto Cropped Preto Shorts com Linhas">
+            <h5><a class="linkproduto" href="#">Conjunto Cropped Preto Shorts com Linhas</a></h5>
+            <p class="preco">R$53,995</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/croppeds.jpg" alt="Kit 4 Croppeds Tons Terrosos" title="Kit 4 Croppeds Tons Terrosos">
+            <h5><a class="linkproduto" href="#">Kit 4 Croppeds Tons Terrosos</a></h5>
+            <p class="preco">R$102,90</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/croppedmangalonga.jpg" alt="Kit 4 Croppeds Manga Comprida Tons Terrosos" title="Kit 4 Croppeds Manga Comprida Tons Terrosos">
+            <h5><a class="linkproduto" href="#">Kit 4 Croppeds Manga Comprida Tons Terrosos</a></h5>
+            <p class="preco">R$122,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/croppedvermelho.jpeg" alt="Cropped Regata Vermelho" title="Cropped Regata Vermelho">
+            <h5><a class="linkproduto" href="#">Cropped Regata Vermelho</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/Croppedrosa.jpg" alt="Cropped Sem Manga Rosa" title="Cropped Sem Manga Rosa">
+            <h5><a class="linkproduto" href="#">Cropped Sem Manga Rosa</a></h5>
+            <p class="preco">R$20,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/blusavermelha.jpg" alt="Blusa De Amarração Vermelha" title="Blusa De Amarração Vermelha">
+            <h5><a class="linkproduto" href="#">Blusa De Amarração Vermelha</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/croppedpreto.jpg" alt="Cropped  Preto" title="Cropped  Preto">
+            <h5><a class="linkproduto" href="#">Cropped  Preto</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/vestidopreto.jpg" alt="Vestido Preto Manga Comprida" title="Vestido Preto Manga Comprida">
+            <h5><a class="linkproduto" href="#">Vestido Preto Manga Comprida</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/vestidopreto1.jpg" alt="Vestido Preto Manga Bufante" title="Vestido Preto Manga Bufante">
+            <h5><a class="linkproduto" href="#">Vestido Preto Manga Bufante</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/bodypreto.jpeg" alt="Body Manga Longa Preto" title="Body Manga Longa Preto">
+            <h5><a class="linkproduto" href="#">Body Manga Longa Preto</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/macacaopreto.jpeg" alt="Macacao Preto Alça Fina" title="Macacao Preto Alça Fina">
+            <h5><a class="linkproduto" href="#">Macacao Preto Alça Fina</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/shortpreto.jpeg" alt="Short Preto Simples" title="Short Preto Simples">
+            <h5><a class="linkproduto" href="#">Short Preto Simples</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/shortpreto1.jpeg" alt="Short Preto Meio Plissado" title="Short Preto Meio Plissado">
+            <h5><a class="linkproduto" href="#">Short Preto Meio Plissado</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        <div class="offer">
+            <img src="./img/saiapreta.jpeg" alt="Saia Preta Tubo Sexy" title="Saia Preta Tubo Sexy">
+            <h5><a class="linkproduto" href="#">Saia Preta Tubo Sexy</a></h5>
+            <p class="preco">R$127,95</p>
+            <button class="btn btn-add-cart" >Adicionar ao Carrinho</button>
+            <button class="btn btn-favorite">
+                <img src="./img/FAv1.png" alt="Adicionar aos Favoritos">
+            </button>
+        </div>
+        </section>
+        <nav class="pagination" aria-label="...">
+            <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="./home.html">1 <span class="sr-only">(atual)</span></a></li>
+            <li class="page-item"><a class="page-link" href="./home2.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="./home3.html">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="./home2.html">Próximo</a>
+            </li>
+            </ul>
+        </nav>
+    </main>
+<footer>
+    <a href="./about.html">Quem somos</a>
+    <a href="./suporte.html">Suporte</a>
+    <a href="./politicadeprivacidade.html">Politica de Privacidade</a>
+    <a href="./account.html">Minha Conta</a>
+    <p>&copy; 2024 Shine. Todos os direitos reservados.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Seleciona todos os botões de favoritos
+        const favoriteButtons = document.querySelectorAll('.btn-favorite');
+        const addCartButtons = document.querySelectorAll('.btn-add-cart');
+    
+        // Adiciona um evento de clique a cada botão de favorito
+        favoriteButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Obtém o ícone do coração dentro do botão
+                const icon = this.querySelector('img');
+                // Alterna a imagem do coração
+                if (icon.src.includes('FAv1.png')) {
+                    icon.src = './img/FAv2.png'; // Imagem não preenchida
+                } else {
+                    icon.src = './img/FAv1.png'; // Imagem preenchida
+                } 
+            });
+        });
+
+        // Adiciona um evento de clique a cada botão de adicionar ao carrinho
+        addCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Exibe uma mensagem ao adicionar o produto ao carrinho
+                showAlert('Produto adicionado ao carrinho!');
+            });
+        });
+    });
+
+    function showAlert(message) {
+        // Cria o alerta usando Bootstrap
+        const alert = document.createElement('div');
+        alert.className = 'alert alert-success alert-dismissible fade show';
+        alert.role = 'alert';
+        alert.innerHTML = `
+            ${message}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        `;
+
+        // Adiciona o alerta à área de alertas
+        document.getElementById('alert-area').appendChild(alert);
+
+        // Remove o alerta após 3 segundos
+        setTimeout(() => {
+            $(alert).alert('close');
+        }, 3000);
+    }
+</script>
+</body>
+</html>
